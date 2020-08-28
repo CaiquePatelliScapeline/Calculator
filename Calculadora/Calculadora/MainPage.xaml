@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Calculadora.MainPage">
+
+    <StackLayout>
+        <Grid BackgroundColor="Black">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label
+                Text=""
+                x:Name="lblResultadoTop"
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                FontSize="40"
+                HorizontalOptions="End"
+                TextColor="White"
+                BackgroundColor="Black"
+                
+            />
+            
+            <Label
+                Text=""
+                x:Name="lblResultado"
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                FontSize="40"
+                HorizontalOptions="End"
+                TextColor="White"
+                BackgroundColor="Black"
+            />
+
+            <Label
+                Text=""
+                x:Name="lblResultadoBot"
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                FontSize="40"
+                HorizontalOptions="End"
+                TextColor="Gray"
+                BackgroundColor="Black"
+            />
+
+            <Button
+                Text="AC"
+                x:Name="btnAC"
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkRed"
+                Margin="5" 
+                Clicked="limpar"
+            />
+
+            <Button
+                Text="/"
+                x:Name="btnDiv"
+                Grid.Row="4"
+                Grid.Column="2"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="5"
+                Clicked="divisao"
+            />
+
+            <Button
+                Text="*"
+                x:Name="btnMult"
+                Grid.Row="4"
+                Grid.Column="3"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="5"
+                Clicked="multiplicacao"
+            />
+
+            <Button
+                Text="-"
+                x:Name="btnSubt"
+                Grid.Row="5"
+                Grid.Column="3"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="subtracao"
+            />
+
+            <Button
+                Text="+"
+                x:Name="btnAdic"
+                Grid.Row="6"
+                Grid.Column="3"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="adicao"
+            />
+
+            <Button
+                Text="="
+                x:Name="btnResult"
+                Grid.Row="7"
+                Grid.RowSpan="2"
+                Grid.Column="3"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="calcular"
+            />
+
+            <Button
+                Text="7"
+                x:Name="btnSete"
+                Grid.Row="5"
+                Grid.Column="0"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="numSete"
+            />
+
+            <Button
+                Text="8"
+                x:Name="btnOito"
+                Grid.Row="5"
+                Grid.Column="1"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="numOito"
+            />
+
+            <Button
+                Text="9"
+                x:Name="btnNove"
+                Grid.Row="5"
+                Grid.Column="2"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="numNove"
+            />
+
+            <Button
+                Text="4"
+                x:Name="btnQuatro"
+                Grid.Row="6"
+                Grid.Column="0"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="numQuatro"
+            />
+
+            <Button
+                Text="5"
+                x:Name="btnCinco"
+                Grid.Row="6"
+                Grid.Column="1"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="numCinco"
+            />
+
+            <Button
+                Text="6"
+                x:Name="btnSeis"
+                Grid.Row="6"
+                Grid.Column="2"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="numSeis"
+            />
+
+            <Button
+                Text="1"
+                x:Name="btnUm"
+                Grid.Row="7"
+                Grid.Column="0"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="numUm"
+            />
+
+            <Button
+                Text="2"
+                x:Name="btnDois"
+                Grid.Row="7"
+                Grid.Column="1"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="numDois"
+            />
+
+            <Button
+                Text="3"
+                x:Name="btnTres"
+                Grid.Row="7"
+                Grid.Column="2"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="numTres"
+            />
+
+            <Button
+                Text="0"
+                x:Name="btnZero"
+                Grid.Row="8"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="numZero"
+            />
+
+            <Button
+                Text="."
+                x:Name="btnPonto"
+                Grid.Row="8"
+                Grid.Column="2"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="DarkGray"
+                Margin="10"
+                Clicked="numPonto"
+            />
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
