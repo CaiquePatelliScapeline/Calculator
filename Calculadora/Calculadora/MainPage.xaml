@@ -6,12 +6,9 @@
              mc:Ignorable="d"
              x:Class="Calculadora.MainPage">
 
-    <StackLayout>
-        <Grid BackgroundColor="Black">
+    <StackLayout BackgroundColor="#252525">
+        <Grid BackgroundColor="#000000">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
@@ -19,289 +16,346 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
             </Grid.RowDefinitions>
 
             <Label
                 Text=""
                 x:Name="lblResultadoTop"
                 Grid.Row="1"
-                Grid.Column="0"
-                Grid.ColumnSpan="4"
                 FontSize="40"
-                HorizontalOptions="End"
-                TextColor="White"
-                BackgroundColor="Black"
-                
+                HorizontalOptions="Start"
+                TextColor="#CEC6C6"
+                MaxLines="1"
             />
-            
+
             <Label
                 Text=""
                 x:Name="lblResultado"
                 Grid.Row="2"
-                Grid.Column="0"
-                Grid.ColumnSpan="4"
-                FontSize="40"
+                FontSize="60"
                 HorizontalOptions="End"
-                TextColor="White"
-                BackgroundColor="Black"
+                TextColor="#E0E2EC"
+                MaxLines="1"
             />
 
             <Label
                 Text=""
                 x:Name="lblResultadoBot"
                 Grid.Row="3"
-                Grid.Column="0"
-                Grid.ColumnSpan="4"
-                FontSize="40"
+                FontSize="42"
                 HorizontalOptions="End"
-                TextColor="Gray"
-                BackgroundColor="Black"
+                TextColor="#84858A"
+                MaxLines="1"
             />
+        </Grid>
 
+        <Grid BackgroundColor="#252525">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            
             <Button
                 Text="AC"
                 x:Name="btnAC"
-                Grid.Row="4"
+                Grid.Row="0"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkRed"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
                 Margin="5" 
                 Clicked="limpar"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="/"
                 x:Name="btnDiv"
-                Grid.Row="4"
+                Grid.Row="0"
                 Grid.Column="2"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
                 Margin="5"
                 Clicked="divisao"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="*"
                 x:Name="btnMult"
-                Grid.Row="4"
+                Grid.Row="0"
                 Grid.Column="3"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
                 Margin="5"
                 Clicked="multiplicacao"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="-"
                 x:Name="btnSubt"
-                Grid.Row="5"
+                Grid.Row="1"
                 Grid.Column="3"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="subtracao"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="+"
                 x:Name="btnAdic"
-                Grid.Row="6"
+                Grid.Row="2"
                 Grid.Column="3"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="adicao"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="="
                 x:Name="btnResult"
-                Grid.Row="7"
+                Grid.Row="3"
                 Grid.RowSpan="2"
                 Grid.Column="3"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="calcular"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="7"
                 x:Name="btnSete"
-                Grid.Row="5"
+                Grid.Row="1"
                 Grid.Column="0"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="numSete"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="8"
                 x:Name="btnOito"
-                Grid.Row="5"
+                Grid.Row="1"
                 Grid.Column="1"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="numOito"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="9"
                 x:Name="btnNove"
-                Grid.Row="5"
+                Grid.Row="1"
                 Grid.Column="2"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="numNove"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="4"
                 x:Name="btnQuatro"
-                Grid.Row="6"
+                Grid.Row="2"
                 Grid.Column="0"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="numQuatro"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="5"
                 x:Name="btnCinco"
-                Grid.Row="6"
+                Grid.Row="2"
                 Grid.Column="1"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="numCinco"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="6"
                 x:Name="btnSeis"
-                Grid.Row="6"
+                Grid.Row="2"
                 Grid.Column="2"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="numSeis"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="1"
                 x:Name="btnUm"
-                Grid.Row="7"
+                Grid.Row="3"
                 Grid.Column="0"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="numUm"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="2"
                 x:Name="btnDois"
-                Grid.Row="7"
+                Grid.Row="3"
                 Grid.Column="1"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="numDois"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="3"
                 x:Name="btnTres"
-                Grid.Row="7"
+                Grid.Row="3"
                 Grid.Column="2"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="numTres"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="0"
                 x:Name="btnZero"
-                Grid.Row="8"
+                Grid.Row="4"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="numZero"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
 
             <Button
                 Text="."
                 x:Name="btnPonto"
-                Grid.Row="8"
+                Grid.Row="4"
                 Grid.Column="2"
-                FontSize="20"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                TextColor="White"
-                BackgroundColor="DarkGray"
-                Margin="10"
+                FontSize="24"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                TextColor="#BCBCBD"
+                BackgroundColor="#202020"
+                Margin="5"
                 Clicked="numPonto"
+                CornerRadius="8"
+                BorderColor="#232323"
+                BorderWidth="1"
             />
         </Grid>
     </StackLayout>

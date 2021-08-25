@@ -6,13 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Calculadora
-{
+namespace Calculadora {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
-    public partial class MainPage : ContentPage
-    {
+    public partial class MainPage : ContentPage {
         // Variaveis
         double num1, num2, resultado;
         int operac;
@@ -27,10 +25,8 @@ namespace Calculadora
         bool subtraiu = false;
 
         // Botão Limpar
-        public void limpar(object sender, EventArgs e)
-        {
-            try
-            {
+        public void limpar(object sender, EventArgs e) {
+            try {
                 num1 = 0;
                 num2 = 0;
                 operac = 0;
@@ -47,23 +43,17 @@ namespace Calculadora
                 lblResultado.Text = "";
                 lblResultadoTop.Text = "";
                 lblResultadoBot.Text = "";
+            } catch {
+                Erro("Erro no botão Limpar");
             }
-            catch
-            {
-                ErroLimpar();
-            }
-            
+
         }
 
         // Botão Calcular
-        public void calcular(object sender, EventArgs e)
-        {
-            try
-            {
-                if ((verificaN1 == true) && (operac != 0) && (verificaN2 == true))
-                {
-                    if (pont == true)
-                    {
+        public void calcular(object sender, EventArgs e) {
+            try {
+                if ((verificaN1 == true) && (operac != 0) && (verificaN2 == true)) {
+                    if (pont == true) {
                         conta = lblResultado.Text + "0";
 
                         Atualiza();
@@ -83,20 +73,15 @@ namespace Calculadora
                     pontN2 = false;
                     subtraiu = false;
                 }
-            }
-            catch
-            {
-                ErroCalcular();
+            } catch {
+                Erro("Erro no botão Calcular");
             }
         }
 
         // Botões de Operação
-        public void adicao(object sender, EventArgs e)
-        {
-            try
-            {
-                if (verificaN1 == true)
-                {
+        public void adicao(object sender, EventArgs e) {
+            try {
+                if (verificaN1 == true) {
                     Completar();
 
                     conta = lblResultado.Text + " + ";
@@ -109,24 +94,19 @@ namespace Calculadora
 
                     conta = "";
                 }
-            }
-            catch
-            {
-                ErroOperador();
+            } catch {
+                Erro("Erro nos botões de Operação");
             }
         }
 
-        public void subtracao(object sender, EventArgs e)
-        {
-            try
-            {
-                if ((verificaN1 == true) && (subtraiu == false))
-                {
+        public void subtracao(object sender, EventArgs e) {
+            try {
+                if ((verificaN1 == true) && (subtraiu == false)) {
                     Completar();
 
                     conta = lblResultado.Text + " - ";
                     operac = 2;
-                    
+
                     Atualiza();
 
                     lblResultadoTop.Text = lblResultado.Text;
@@ -134,9 +114,7 @@ namespace Calculadora
 
                     conta = "";
                     subtraiu = true;
-                }
-                else if ((negativo == false) || (calculou == true))
-                {
+                } else if ((negativo == false) || (calculou == true)) {
                     lblResultado.Text = "";
                     conta = lblResultado.Text + " - ";
                     lblResultado.Text = conta;
@@ -146,19 +124,14 @@ namespace Calculadora
                     negativo = true;
                     calculou = false;
                 }
-            }
-            catch
-            {
-                ErroOperador();
+            } catch {
+                Erro("Erro nos botões de Operação");
             }
         }
 
-        public void multiplicacao(object sender, EventArgs e)
-        {
-            try 
-            {
-                if (verificaN1 == true)
-                {
+        public void multiplicacao(object sender, EventArgs e) {
+            try {
+                if (verificaN1 == true) {
                     Completar();
 
                     num1 = Convert.ToDouble(lblResultado.Text);
@@ -172,19 +145,14 @@ namespace Calculadora
 
                     conta = "";
                 }
-            }
-            catch
-            {
-                ErroOperador();
+            } catch {
+                Erro("Erro nos botões de Operação");
             }
         }
 
-        public void divisao(object sender, EventArgs e)
-        {
-            try 
-            {
-                if (verificaN1 == true)
-                {
+        public void divisao(object sender, EventArgs e) {
+            try {
+                if (verificaN1 == true) {
                     Completar();
 
                     conta = lblResultado.Text + " / ";
@@ -194,58 +162,45 @@ namespace Calculadora
 
                     lblResultadoTop.Text = lblResultado.Text;
                     lblResultado.Text = "";
-                    conta = "";   
+                    conta = "";
                 }
-            }
-            catch
-            {
-                ErroOperador();
+            } catch {
+                Erro("Erro nos botões de Operação");
             }
         }
 
         // Botões de Numero e o ponto
-        public void numZero(object sender, EventArgs e)
-        {
-            try 
-            {
-                if (pont == true)
-                {
+        public void numZero(object sender, EventArgs e) {
+            try {
+                if (pont == true) {
                     pont = false;
                 }
 
-                if (calculou == true)
-                {
+                if (calculou == true) {
                     calculou = false;
                     lblResultado.Text = "";
                 }
 
                 conta = lblResultado.Text + "0";
                 verificaN1 = true;
-                
-                if (operac != 0)
-                {
+
+                if (operac != 0) {
                     verificaN2 = true;
                 }
 
                 Atualiza();
-            }
-            catch
-            {
-                ErroNum();
+            } catch {
+                Erro("Erro nos botões de Número");
             }
         }
 
-        public void numUm(object sender, EventArgs e)
-        {
-            try 
-            {
-                if (pont == true)
-                {
+        public void numUm(object sender, EventArgs e) {
+            try {
+                if (pont == true) {
                     pont = false;
                 }
 
-                if (calculou == true)
-                {
+                if (calculou == true) {
                     calculou = false;
                     lblResultado.Text = "";
                 }
@@ -253,30 +208,23 @@ namespace Calculadora
                 conta = lblResultado.Text + "1";
                 verificaN1 = true;
 
-                if (operac != 0)
-                {
+                if (operac != 0) {
                     verificaN2 = true;
                 }
 
                 Atualiza();
-            }
-            catch
-            {
-                ErroNum();
+            } catch {
+                Erro("Erro nos botões de Número");
             }
         }
 
-        public void numDois(object sender, EventArgs e)
-        {
-            try
-            {
-                if (pont == true)
-                {
+        public void numDois(object sender, EventArgs e) {
+            try {
+                if (pont == true) {
                     pont = false;
                 }
 
-                if (calculou == true)
-                {
+                if (calculou == true) {
                     calculou = false;
                     lblResultado.Text = "";
                 }
@@ -284,30 +232,23 @@ namespace Calculadora
                 conta = lblResultado.Text + "2";
                 verificaN1 = true;
 
-                if (operac != 0)
-                {
+                if (operac != 0) {
                     verificaN2 = true;
                 }
 
                 Atualiza();
-            }
-            catch
-            {
-                ErroNum();
+            } catch {
+                Erro("Erro nos botões de Número");
             }
         }
 
-        public void numTres(object sender, EventArgs e)
-        {
-            try 
-            {
-                if (pont == true)
-                {
+        public void numTres(object sender, EventArgs e) {
+            try {
+                if (pont == true) {
                     pont = false;
                 }
 
-                if (calculou == true)
-                {
+                if (calculou == true) {
                     calculou = false;
                     lblResultado.Text = "";
                 }
@@ -315,30 +256,23 @@ namespace Calculadora
                 conta = lblResultado.Text + "3";
                 verificaN1 = true;
 
-                if (operac != 0)
-                {
+                if (operac != 0) {
                     verificaN2 = true;
                 }
 
                 Atualiza();
-            }
-            catch
-            {
-                ErroNum();
+            } catch {
+                Erro("Erro nos botões de Número");
             }
         }
 
-        public void numQuatro(object sender, EventArgs e)
-        {
-            try 
-            {
-                if (pont == true)
-                {
+        public void numQuatro(object sender, EventArgs e) {
+            try {
+                if (pont == true) {
                     pont = false;
                 }
 
-                if (calculou == true)
-                {
+                if (calculou == true) {
                     calculou = false;
                     lblResultado.Text = "";
                 }
@@ -346,30 +280,23 @@ namespace Calculadora
                 conta = lblResultado.Text + "4";
                 verificaN1 = true;
 
-                if (operac != 0)
-                {
+                if (operac != 0) {
                     verificaN2 = true;
                 }
 
                 Atualiza();
-            }
-            catch
-            {
-                ErroNum();
+            } catch {
+                Erro("Erro nos botões de Número");
             }
         }
 
-        public void numCinco(object sender, EventArgs e)
-        {
-            try 
-            {
-                if (pont == true)
-                {
+        public void numCinco(object sender, EventArgs e) {
+            try {
+                if (pont == true) {
                     pont = false;
                 }
 
-                if (calculou == true)
-                {
+                if (calculou == true) {
                     calculou = false;
                     lblResultado.Text = "";
                 }
@@ -377,30 +304,23 @@ namespace Calculadora
                 conta = lblResultado.Text + "5";
                 verificaN1 = true;
 
-                if (operac != 0)
-                {
+                if (operac != 0) {
                     verificaN2 = true;
                 }
 
                 Atualiza();
-            }
-            catch
-            {
-                ErroNum();
+            } catch {
+                Erro("Erro nos botões de Número");
             }
         }
 
-        public void numSeis(object sender, EventArgs e)
-        {
-            try 
-            {
-                if (pont == true)
-                {
+        public void numSeis(object sender, EventArgs e) {
+            try {
+                if (pont == true) {
                     pont = false;
                 }
 
-                if (calculou == true)
-                {
+                if (calculou == true) {
                     calculou = false;
                     lblResultado.Text = "";
                 }
@@ -408,30 +328,23 @@ namespace Calculadora
                 conta = lblResultado.Text + "6";
                 verificaN1 = true;
 
-                if (operac != 0)
-                {
+                if (operac != 0) {
                     verificaN2 = true;
                 }
 
                 Atualiza();
-            }
-            catch
-            {
-                ErroNum();
+            } catch {
+                Erro("Erro nos botões de Número");
             }
         }
 
-        public void numSete(object sender, EventArgs e)
-        {
-            try 
-            {
-                if (pont == true)
-                {
+        public void numSete(object sender, EventArgs e) {
+            try {
+                if (pont == true) {
                     pont = false;
                 }
 
-                if (calculou == true)
-                {
+                if (calculou == true) {
                     calculou = false;
                     lblResultado.Text = "";
                 }
@@ -439,30 +352,23 @@ namespace Calculadora
                 conta = lblResultado.Text + "7";
                 verificaN1 = true;
 
-                if (operac != 0)
-                {
+                if (operac != 0) {
                     verificaN2 = true;
                 }
 
                 Atualiza();
-            }
-            catch
-            {
-                ErroNum();
+            } catch {
+                Erro("Erro nos botões de Número");
             }
         }
 
-        public void numOito(object sender, EventArgs e)
-        {
-            try 
-            {
-                if (pont == true)
-                {
+        public void numOito(object sender, EventArgs e) {
+            try {
+                if (pont == true) {
                     pont = false;
                 }
 
-                if (calculou == true)
-                {
+                if (calculou == true) {
                     calculou = false;
                     lblResultado.Text = "";
                 }
@@ -470,29 +376,23 @@ namespace Calculadora
                 conta = lblResultado.Text + "8";
                 verificaN1 = true;
 
-                if (operac != 0)
-                {
+                if (operac != 0) {
                     verificaN2 = true;
                 }
 
                 Atualiza();
-            }
-            catch
-            {
-                ErroNum();
+            } catch {
+                Erro("Erro nos botões de Número");
             }
         }
-        public void numNove(object sender, EventArgs e)
-        {
-            try 
-            {
-                if (pont == true)
-                {
+
+        public void numNove(object sender, EventArgs e) {
+            try {
+                if (pont == true) {
                     pont = false;
                 }
 
-                if (calculou == true)
-                {
+                if (calculou == true) {
                     calculou = false;
                     lblResultado.Text = "";
                 }
@@ -500,49 +400,35 @@ namespace Calculadora
                 conta = lblResultado.Text + "9";
                 verificaN1 = true;
 
-                if (operac != 0)
-                {
+                if (operac != 0) {
                     verificaN2 = true;
                 }
 
                 Atualiza();
-            }
-            catch
-            {
-                ErroNum();
+            } catch {
+                Erro("Erro nos botões de Número");
             }
         }
-        public void numPonto(object sender, EventArgs e)
-        {
-            try 
-            {
-                if (pontN1 == false)
-                {
-                    if ((verificaN1 == false) || (calculou == true))
-                    {
+        public void numPonto(object sender, EventArgs e) {
+            try {
+                if (pontN1 == false) {
+                    if ((verificaN1 == false) || (calculou == true)) {
                         conta = lblResultado.Text + "0.";
 
                         verificaN1 = true;
                         calculou = false;
-                    }
-                    else if ((verificaN1 == true) && (calculou == false))
-                    {
+                    } else if ((verificaN1 == true) && (calculou == false)) {
                         conta = lblResultado.Text + ".";
                     }
 
                     pontN1 = true;
                     pont = true;
-                }
-                else if (pontN2 == false)
-                {
-                    if ((operac != 0) && (verificaN2 == false))
-                    {
+                } else if (pontN2 == false) {
+                    if ((operac != 0) && (verificaN2 == false)) {
                         verificaN2 = true;
 
                         conta = lblResultado.Text + "0.";
-                    }
-                    else if ((operac != 0) && (verificaN2 == true))
-                    {
+                    } else if ((operac != 0) && (verificaN2 == true)) {
                         conta = lblResultado.Text + ".";
                     }
 
@@ -551,26 +437,20 @@ namespace Calculadora
                 }
 
                 Atualiza();
-            }
-            catch
-            {
-                ErroPonto();
+            } catch {
+                Erro("Erro no botão Ponto");
             }
         }
 
         //Funções
-        public void Atualiza()
-        {
-            try 
-            {
+        public void Atualiza() {
+            try {
                 lblResultado.Text = conta;
 
-                if ((verificaN1 == true) && (operac != 0) && (verificaN2 == true))
-                {
+                if ((verificaN1 == true) && (operac != 0) && (verificaN2 == true)) {
                     num2 = Convert.ToDouble(lblResultado.Text);
 
-                    switch (operac)
-                    {
+                    switch (operac) {
                         case 1:     //Adição
                             resultado = num1 + num2;
                             break;
@@ -589,19 +469,14 @@ namespace Calculadora
 
                     lblResultadoBot.Text = "" + resultado;
                 }
-            }
-            catch
-            {
-                ErroAtualizar();
+            } catch {
+                //Erro(Erro na função Atualizar);
             }
         }
 
-        public void Completar()
-        {
-            try 
-            {
-                if (pont == true)
-                {
+        public void Completar() {
+            try {
+                if (pont == true) {
                     conta = lblResultado.Text + "0";
 
                     Atualiza();
@@ -609,52 +484,16 @@ namespace Calculadora
                 }
 
                 num1 = Convert.ToDouble(lblResultado.Text);
-            }
-            catch
-            {
-                ErroCompletar();
+            } catch {
+                Erro("Erro na função Completar");
             }
         }
 
-        //Erros
-
-        private async void ErroCalcular()
-        {
-            await DisplayAlert("Alerta", "Erro no botão Calcular", "OK");
+        private async void Erro(string message) {
+            await DisplayAlert("Alerta", $"{message}", "OK");
         }
 
-        private async void ErroLimpar()
-        {
-            await DisplayAlert("Alerta", "Erro no botão Limpar", "OK");
-        }
-
-        private async void ErroNum()
-        {
-            await DisplayAlert("Alerta", "Erro nos botões de Número", "OK");
-        }
-
-        private async void ErroOperador()
-        {
-            await DisplayAlert("Alerta", "Erro nos botões de Operação", "OK");
-        }
-
-        private async void ErroPonto()
-        {
-            await DisplayAlert("Alerta", "Erro no botão Ponto", "OK");
-        }
-
-        private async void ErroAtualizar()
-        {
-            await DisplayAlert("Alerta", "Erro na função Atualizar", "OK");
-        }
-
-        private async void ErroCompletar()
-        {
-            await DisplayAlert("Alerta", "Erro na função Completar", "OK");
-        }
-
-        public MainPage()
-        {
+        public MainPage() {
             InitializeComponent();
         }
     }
