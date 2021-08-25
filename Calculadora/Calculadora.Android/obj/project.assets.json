@@ -1934,24 +1934,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\EtecVAV\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Caique\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EtecVAV\\Desktop\\AppCalculadora\\Calculadora\\Calculadora\\Calculadora.Android\\Calculadora.Android.csproj",
+      "projectUniqueName": "D:\\Users\\Caique Patelli\\Projects\\GitHub\\Calculator\\Calculadora\\Calculadora.Android\\Calculadora.Android.csproj",
       "projectName": "Calculadora.Android",
-      "projectPath": "C:\\Users\\EtecVAV\\Desktop\\AppCalculadora\\Calculadora\\Calculadora\\Calculadora.Android\\Calculadora.Android.csproj",
-      "packagesPath": "C:\\Users\\EtecVAV\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\EtecVAV\\Desktop\\AppCalculadora\\Calculadora\\Calculadora\\Calculadora.Android\\obj\\",
+      "projectPath": "D:\\Users\\Caique Patelli\\Projects\\GitHub\\Calculator\\Calculadora\\Calculadora.Android\\Calculadora.Android.csproj",
+      "packagesPath": "C:\\Users\\Caique\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\Caique Patelli\\Projects\\GitHub\\Calculator\\Calculadora\\Calculadora.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\EtecVAV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Caique\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1965,8 +1965,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\EtecVAV\\Desktop\\AppCalculadora\\Calculadora\\Calculadora\\Calculadora\\Calculadora.csproj": {
-              "projectPath": "C:\\Users\\EtecVAV\\Desktop\\AppCalculadora\\Calculadora\\Calculadora\\Calculadora\\Calculadora.csproj"
+            "D:\\Users\\Caique Patelli\\Projects\\GitHub\\Calculator\\Calculadora\\Calculadora\\Calculadora.csproj": {
+              "projectPath": "D:\\Users\\Caique Patelli\\Projects\\GitHub\\Calculator\\Calculadora\\Calculadora\\Calculadora.csproj"
             }
           }
         }

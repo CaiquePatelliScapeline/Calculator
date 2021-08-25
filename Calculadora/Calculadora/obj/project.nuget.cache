@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "5tn7gfeDAofQZpoY++TPvCBNd5e27E40wW1TFxw7VMCf+GwJBNdOQUdJ/pxfMzA8fdapurWb33dka1JFc16TZg==",
+  "dgSpecHash": "yvMl5nOmVQ9sMAVn16RLpl/89dKMF7qDWvLflQ0Xwz3AQkYuE64K98gLww0JP3rUbEOcUoDWnZnOuTj4U59ryw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EtecVAV\\Desktop\\AppCalculadora\\Calculadora\\Calculadora\\Calculadora\\Calculadora.csproj",
+  "projectFilePath": "D:\\Users\\Caique Patelli\\Projects\\GitHub\\Calculator\\Calculadora\\Calculadora\\Calculadora.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\EtecVAV\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\EtecVAV\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\EtecVAV\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
-    "C:\\Users\\EtecVAV\\.nuget\\packages\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"
+    "C:\\Users\\Caique\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Caique\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Caique\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Caique\\.nuget\\packages\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\Caique\\.nuget\\packages\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"
   ],
   "logs": []
 }

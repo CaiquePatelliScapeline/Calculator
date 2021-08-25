@@ -12,3 +12,17 @@ C:\Users\EtecVAV\Desktop\AppCalculadora\Calculadora\Calculadora\Calculadora\obj\
 C:\Users\EtecVAV\Desktop\AppCalculadora\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.dll
 C:\Users\EtecVAV\Desktop\AppCalculadora\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\ref\Calculadora.dll
 C:\Users\EtecVAV\Desktop\AppCalculadora\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.pdb
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\bin\Debug\netstandard2.0\Calculadora.deps.json
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\bin\Debug\netstandard2.0\Calculadora.dll
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\bin\Debug\netstandard2.0\ref\Calculadora.dll
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\bin\Debug\netstandard2.0\Calculadora.pdb
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.csproj.AssemblyReference.cache
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.AssemblyInfoInputs.cache
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.AssemblyInfo.cs
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.csproj.CoreCompileInputs.cache
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.dll
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\obj\Debug\netstandard2.0\ref\Calculadora.dll
+D:\Users\Caique Patelli\Projects\GitHub\Calculator\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.pdb
